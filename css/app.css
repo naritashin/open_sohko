@@ -1,0 +1,176 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box;
+  font-size: 0; }
+
+body {
+  background-image: url(http://opensohko.com/admin/wp-content/themes/opensohkodesign/images/bk.png);
+  background-attachment: fixed; }
+
+a {
+  text-decoration: none; }
+
+.header {
+  width: 100%;
+  height: 631.5px;
+  background-image: url(http://opensohko.com/admin/wp-content/themes/opensohkodesign/images/head_bg_sample.jpg);
+  background-position: 50% 50%;
+  background-size: cover; }
+  .header__wrapper {
+    padding-top: 189px;
+    text-align: center; }
+  .header__powerwd {
+    letter-spacing: -1px; }
+
+.footer {
+  color: #fff;
+  background-color: #000;
+  text-align: center; }
+  .footer__wrapper {
+    width: 1000px;
+    margin: 0 auto; }
+
+.u-mt-5 {
+  margin-top: 5px; }
+
+.u-mt-10 {
+  margin-top: 10px; }
+
+.u-mt-15 {
+  margin-top: 15px; }
+
+.u-mt-20 {
+  margin-top: 20px; }
+
+.u-mt-25 {
+  margin-top: 25px; }
+
+.u-mt-30 {
+  margin-top: 30px; }
+
+.u-mt-35 {
+  margin-top: 35px; }
+
+.u-mt-40 {
+  margin-top: 40px; }
+
+.u-mt-45 {
+  margin-top: 45px; }
+
+.u-mt-50 {
+  margin-top: 50px; }
+
+.u-mt-55 {
+  margin-top: 55px; }
+
+.u-mt-60 {
+  margin-top: 60px; }
+
+.u-mt-65 {
+  margin-top: 65px; }
+
+.u-mt-70 {
+  margin-top: 70px; }
+
+.u-mt-75 {
+  margin-top: 75px; }
+
+.u-mt-80 {
+  margin-top: 80px; }
+
+.u-mt-85 {
+  margin-top: 85px; }
+
+.u-mt-90 {
+  margin-top: 90px; }
+
+.u-mt-95 {
+  margin-top: 95px; }
+
+.u-mt-100 {
+  margin-top: 100px; }
+
+.u-mt-143 {
+  margin-top: 143px; }
+
+.u-ml-1 {
+  margin-top: 1px; }
+
+.u-ml-2 {
+  margin-top: 2px; }
+
+.u-ml-3 {
+  margin-top: 3px; }
+
+.u-ml-4 {
+  margin-top: 4px; }
+
+.u-ml-5 {
+  margin-top: 5px; }
+
+.u-ml-6 {
+  margin-top: 6px; }
+
+.u-ml-7 {
+  margin-top: 7px; }
+
+.u-ml-8 {
+  margin-top: 8px; }
+
+.u-ml-9 {
+  margin-top: 9px; }
+
+.u-ml-10 {
+  margin-top: 10px; }
+
+.u-txt-bold {
+  font-weight: bold; }
+
+.u-txt__link {
+  color: #fff; }

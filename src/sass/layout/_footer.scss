@@ -1,0 +1,10 @@
+.footer {
+  color: #fff;
+  background-color: $brandColor;
+  text-align: center;
+
+  &__wrapper {
+    width: 1000px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,20 @@
+.u-mt {
+  @for $num from 1 through 20 {
+    &-#{$num * 5} {
+      margin-top: #{$num * 5}px;
+    }
+  }
+
+  &-143 {
+    margin-top: 143px;
+  }
+}
+
+.u-ml {
+  @for $num from 1 through 10 {
+
+    &-#{$num} {
+      margin-top: #{$num}px;
+    }
+  }
+}
