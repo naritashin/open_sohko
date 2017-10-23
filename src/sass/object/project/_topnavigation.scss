@@ -1,0 +1,45 @@
+.p-top {
+  &__wrapper {
+    background-color: $brandColor;
+    padding: {
+      top: 26px;
+      bottom: 14px;
+      left: 20px;
+      right: 20px;
+    }
+  }
+
+  &__logo {
+    float: left;
+  }
+
+  &__nav {
+    float: right;
+    padding-top: 26px;
+    letter-spacing: 1px;
+  }
+
+
+  @media (max-width: 640px) {
+    &__wrapper {
+      padding: 10px 0;
+    }
+
+    &__logo {
+      float: none;
+      width: 130px;
+      margin: 0 auto;
+
+      &__img {
+        height: 50px;
+      }
+    }
+
+    &__nav {
+      float: none;
+      width: 390px;
+      margin: 1px auto 0;
+      padding: 0;
+    }
+  }
+}

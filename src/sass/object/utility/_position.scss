@@ -1,0 +1,48 @@
+@mixin top() {
+    position: fixed;
+    top: 0;
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    z-index: 1;
+}
+
+.is-position {
+  &-top {
+    @include top();
+
+    &_logo {
+      height: 50px;
+    }
+
+    &_nav {
+      padding: 17px 0;
+    }
+
+  }
+
+  &_purpose {
+    margin-top: 195px;
+  }
+
+  @media (max-width: 1000px) {
+    &-top {
+      @include top();
+    }
+
+    &__purpose {
+      margin-top: 196px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    &-top {
+      padding: 10px;
+
+      &_nav {
+        padding: 0;
+        margin-top: 1px;
+      }
+    }
+  }
+}

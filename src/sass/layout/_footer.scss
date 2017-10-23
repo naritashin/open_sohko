@@ -1,4 +1,6 @@
 .footer {
+  padding-top: 45px;
+  padding-bottom: 30px;
   color: #fff;
   background-color: $brandColor;
   text-align: center;
@@ -6,5 +8,61 @@
   &__wrapper {
     width: 1000px;
     margin: 0 auto;
+    letter-spacing: 1px;
+  }
+
+  &__txt {
+    margin-top: 37px;
+    line-height: 20px;
+  }
+
+  &__nav {
+    margin-top: 31px;
+  }
+
+  &__sns {
+    &__list {
+      width: 230px;
+      margin: 40px auto 34px;
+      letter-spacing: 0;
+      text-align: left;
+    }
+
+    &__link {
+      &:hover {
+        color: #fff;
+      }
+    }
+
+    &__facebook {
+      display: inline-block;
+      padding: 0 5px 1px;
+      border-radius: 4px;
+      line-height: 19px;
+      background: {
+        color: $facebookColor;
+      }
+    }
+
+    &__twitter {
+      display: inline-block;
+      padding: 4px 5px;
+      margin-left: 15px;
+      border-radius: 4px;
+      background: {
+        color: $twitterColor;
+      }
+    }
+  }
+
+
+  &__copyright {
+    margin-top: 30px;
+  }
+
+  @media (max-width: 1000px) {
+    &__wrapper {
+      width: 90%;
+    }
   }
 }

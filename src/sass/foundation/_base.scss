@@ -1,3 +1,41 @@
+@font-face {
+  font-family: "opensohko";
+  src: url('../../fonts/opensohko-webfont/OPENSOHKODESIGN.otf');
+}
+
+@font-face {
+  font-family: "yugo-B";
+  src: url('../../fonts/opensohko-webfont/YugothicStd-B.otf');
+}
+
+@font-face {
+  font-family: "yugo-M";
+  src: url('../../fonts/opensohko-webfont/YugothicStd-M.otf');
+}
+
+@font-face {
+  font-family: "simpra";
+  src: url('../../fonts/opensohko-webfont/SIMPRAmonospace.wotf');
+}
+
+.font {
+  &-sohko {
+    font-family: opensohko;
+  }
+
+  &-yugo-B {
+    font-family: yugo-B;
+  }
+
+  &-yugo-M {
+    font-family: yugo-M;
+  }
+
+  &-simpra {
+    font-family: simpra;
+  }
+}
+
 * {
   box-sizing: border-box;
   font: {
@@ -13,5 +51,20 @@ body {
 }
 
 a {
+  color: #fff;
   text-decoration: none;
+  &:hover {
+    color: $hoverColor;
+    cursor: pointer;
+  }
 }
+
+.fa-facebook {
+  &-official,
+  &-square,
+  &-twitter {
+    margin-right: 4px;
+    font-size: 13px;
+  }
+}
+

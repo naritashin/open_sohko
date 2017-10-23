@@ -1,0 +1,20 @@
+.c-nav {
+  &__list {
+    & > li {
+      display: inline-block;
+
+        &:nth-child(n+2):before {
+          padding: {
+            right: 7px;
+        }
+        margin: {
+          left: -0.5px;
+        }
+          font-size:  14px;
+          vertical-align: top;
+          color:  #fff;
+          content:  "|";
+      }
+    }
+  }
+}
