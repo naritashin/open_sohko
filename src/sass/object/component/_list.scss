@@ -1,5 +1,9 @@
 .c-list {
   & > li {
     display: inline-block;
+
+    &:hover {
+      color: $hoverColor;
+    }
   }
 }

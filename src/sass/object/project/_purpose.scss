@@ -14,10 +14,12 @@
   }
 
   &__subtitle {
+    margin-top: 30px;
     font-size: 24px;
   }
 
   &__txt {
+    margin-top: 30px;
     line-height: 28px;
   }
 
@@ -32,7 +34,7 @@
 
   @media (max-width: 1000px) {
     &__wrapper {
-      width: 80%;
+      width: 90%;
     }
 
     &__title {
@@ -41,6 +43,25 @@
 
     &__subtitle {
       font-size: 15px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    &__wrapper {
+      width: 95%;
+      margin-top: 11px;
+    }
+
+    &__title {
+      font-size: 32px;
+    }
+
+    &__subtitle {
+      margin-top: 20px;
+    }
+
+    &__txt {
+      margin-top: 20px;
     }
   }
 }

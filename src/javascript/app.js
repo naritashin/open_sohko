@@ -1,12 +1,13 @@
 $(function() {
   var $productList = $('.js-products_list');
   var $top = $('.js-top');
-  var $topLogo = $('.js-top_logo');
-  var $topNav = $('.js-top_nav');
+  var $topLogo = $('.js-top__logo');
+  var $topNav = $('.js-top__nav');
   var $purpose = $('.js-purpose');
   var $category = $('.js-category');
   var $icon = $('.p-products__icon');
   var $scroll = $('.js-scroll').height();
+  var $movieBtn = $('.js-movie__btn');
 
   $(window).on('reload resize', function() {
     $scroll = $('.js-scroll').height();
@@ -17,14 +18,14 @@ $(function() {
 
     if ($(this).scrollTop() > $scroll) {
       $top.addClass('is-position-top');
-      $topLogo.addClass('is-position-top_logo');
-      $topNav.addClass('is-position-top_nav');
-      $purpose.addClass('is-position_purpose');
+      $topLogo.addClass('is-position-top__logo');
+      $topNav.addClass('is-position-top__nav');
+      $purpose.addClass('is-position__purpose');
     } else {
       $top.removeClass('is-position-top');
-      $topLogo.removeClass('is-position-top_logo');
-      $topNav.removeClass('is-position-top_nav');
-      $purpose.removeClass('is-position_purpose');
+      $topLogo.removeClass('is-position-top__logo');
+      $topNav.removeClass('is-position-top__nav');
+      $purpose.removeClass('is-position__purpose');
     }
 });
 
@@ -50,8 +51,10 @@ $(function() {
         '<li value="'+ products.categoryId +'">'+
           '<a href="">'+
             '<figure class="p-products__img u-fs-13">'+
-              '<img src="'+ products.image +'" alt="products">'+
-              '<figcaption class="p-proucts__cap">'+
+              '<div class="p-products__img-trim">'+
+                '<img src="'+ products.image +'" alt="products">'+
+                '</div>'+
+              '<figcaption class="p-products__cap">'+
                 '<div class="p-products__item__icon" style="background-image: url(http://opensohko.com/admin/wp-content/themes/opensohkodesign/images/icon/category/icon_'+ products.category +'.png)"></div>'+
                 '<p class="p-products__category u-txt-brand">'+ products.categoryname +'</p>'+
                 '<p class="p-products__name u-txt-brand">'+ products.name +'</p>'+
@@ -126,5 +129,13 @@ $(function() {
         $(this).hide();
       }
     })
+  });
+
+
+
+  $movieBtn.on('click', function() {
+    $movieBtn.hide();
+    console.log($('.js-movie'));
+    $('.js-movie')[0].play();
   });
 });

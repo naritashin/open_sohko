@@ -11,27 +11,22 @@
   &-top {
     @include top();
 
-    &_logo {
+    &__logo {
       height: 50px;
     }
 
-    &_nav {
+    &__nav {
       padding: 17px 0;
     }
-
   }
 
-  &_purpose {
+  &__purpose {
     margin-top: 195px;
   }
 
   @media (max-width: 1000px) {
-    &-top {
-      @include top();
-    }
-
     &__purpose {
-      margin-top: 196px;
+      margin-top: 195px;
     }
   }
 
@@ -39,10 +34,14 @@
     &-top {
       padding: 10px;
 
-      &_nav {
+      &__nav {
         padding: 0;
         margin-top: 1px;
       }
+    }
+
+    &__purpose {
+      margin-top: 98px;
     }
   }
 }

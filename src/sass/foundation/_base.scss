@@ -54,7 +54,6 @@ a {
   color: #fff;
   text-decoration: none;
   &:hover {
-    color: $hoverColor;
     cursor: pointer;
   }
 }
@@ -68,3 +67,7 @@ a {
   }
 }
 
+.fa-play-circle {
+  font-size: 88px;
+  line-height: 80px;
+}
