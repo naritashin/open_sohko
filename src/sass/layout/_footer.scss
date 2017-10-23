@@ -37,18 +37,22 @@
     &__facebook {
       display: inline-block;
       padding: 0 5px 1px;
-      border-radius: 4px;
+      border-radius: 3px;
       line-height: 19px;
       background: {
         color: $facebookColor;
       }
     }
 
+    &__share {
+      margin-left: 2px;
+    }
+
     &__twitter {
       display: inline-block;
-      padding: 4px 5px;
+      padding: 4px 10px;
       margin-left: 15px;
-      border-radius: 4px;
+      border-radius: 3px;
       background: {
         color: $twitterColor;
       }
