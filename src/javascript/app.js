@@ -13,17 +13,7 @@ $(function() {
       $scroll = $('.js-scroll').height();
     },
     'scroll': function() {
-      if ($(this).scrollTop() > $scroll) {
-        $top.addClass('is-position-top');
-        $topLogo.addClass('is-position-top__logo');
-        $topNav.addClass('is-position-top__nav');
-        $purpose.addClass('is-position__purpose');
-      } else {
-        $top.removeClass('is-position-top');
-        $topLogo.removeClass('is-position-top__logo');
-        $topNav.removeClass('is-position-top__nav');
-        $purpose.removeClass('is-position__purpose');
-      }
+      togglePosition($(this));
     }
   });
 
@@ -93,7 +83,7 @@ $(function() {
 
       $categoryList.append(items);
     });
-  }
+  };
 
   function showProducts(data) {
     $productList.children().remove();
@@ -118,5 +108,19 @@ $(function() {
 
         $productList.append(items);
     });
+  };
+
+  function togglePosition(topNav) {
+    if (topNav.scrollTop() > $scroll) {
+      $top.addClass('is-position-top');
+      $topLogo.addClass('is-position-top__logo');
+      $topNav.addClass('is-position-top__nav');
+      $purpose.addClass('is-position__purpose');
+    } else {
+      $top.removeClass('is-position-top');
+      $topLogo.removeClass('is-position-top__logo');
+      $topNav.removeClass('is-position-top__nav');
+      $purpose.removeClass('is-position__purpose');
+    }
   };
 });
