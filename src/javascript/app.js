@@ -6,11 +6,11 @@ $(function() {
       $topNav = $('.js-top__nav'),
       $purpose = $('.js-purpose'),
       $icon = $('.p-products__icon'),
-      $scroll = $('.js-scroll').height();
+      $scrollValue = $('.js-scroll').height();
 
   $(window).on({
     'resize': function() {
-      $scroll = $('.js-scroll').height();
+      $scrollValue = $('.js-scroll').height();
     },
     'scroll': function() {
       togglePosition($(this));
@@ -111,7 +111,7 @@ $(function() {
   };
 
   function togglePosition(topNav) {
-    if (topNav.scrollTop() > $scroll) {
+    if (topNav.scrollTop() > $scrollValue) {
       $top.addClass('is-position-top');
       $topLogo.addClass('is-position-top__logo');
       $topNav.addClass('is-position-top__nav');
