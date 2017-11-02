@@ -1,6 +1,7 @@
 // foundation
 @import './foundation/reset';
 @import './foundation/variable';
+@import './foundation/mixin';
 
 @import './foundation/base';
 //
@@ -20,7 +21,6 @@
 @import './object/project/movie';
 
 @import './object/utility/clearfix';
-@import './object/utility/margin';
 @import './object/utility/text';
 @import './object/utility/size';
 @import './object/utility/position';

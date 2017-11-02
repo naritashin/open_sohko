@@ -1,0 +1,8 @@
+@mixin wrapper($width, $mt) {
+  width: $width;
+  margin: {
+    top: $mt;
+    left: auto;
+    right: auto;
+  }
+}

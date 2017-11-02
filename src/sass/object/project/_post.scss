@@ -2,12 +2,8 @@
   background-color: #d8d8d8;
 
   &__wrapper {
-    width: 750px;
+  @include wrapper(750px, 0);
     padding-bottom: 120px;
-    margin: {
-      left: auto;
-      right: auto;
-    }
   }
 
   &__title {
@@ -59,13 +55,8 @@
     }
 
     &__list {
-      width: 100%;
+    @include wrapper(100%, 0);
       max-width: 750px;
-      margin: {
-        left: auto;
-        right: auto;
-      }
-      
     }
   }
 

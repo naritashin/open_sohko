@@ -88,9 +88,11 @@ a {
     color: #ffbf00;
     cursor: pointer; }
 
-.fa-facebook-official, .fa-facebook-square, .fa-facebook-twitter {
-  margin-right: 4px;
-  font-size: 13px; }
+.fa-facebook-official, .fa-facebook-square {
+  margin-right: 4px; }
+
+.fa-twitter {
+  margin-right: 4px; }
 
 .fa-play-circle {
   font-size: 88px;
@@ -163,18 +165,18 @@ a {
     color: #fff; }
   .footer__sns__facebook {
     display: inline-block;
-    padding: 0 5px 1px;
     border-radius: 3px;
-    line-height: 19px;
-    background-color: #365899; }
+    background-color: #365899;
+    padding: 0 5px 1px;
+    line-height: 19px; }
   .footer__sns__share {
     margin-left: 2px; }
   .footer__sns__twitter {
     display: inline-block;
-    padding: 4px 10px;
-    margin-left: 15px;
     border-radius: 3px;
-    background-color: #00aced; }
+    background-color: #00aced;
+    padding: 4px 10px;
+    margin-left: 15px; }
   .footer__copyright {
     margin-top: 30px; }
   @media (max-width: 1000px) {
@@ -202,9 +204,9 @@ a {
 .p-top__wrapper {
   background-color: #000;
   padding-top: 26px;
-  padding-bottom: 14px;
   padding-left: 20px;
-  padding-right: 20px; }
+  padding-right: 20px;
+  padding-bottom: 14px; }
 
 .p-top__logo {
   float: left; }
@@ -309,7 +311,7 @@ a {
 .p-products__img {
   padding: 10px 10px 13px;
   background-color: #fff; }
-  .p-products__img img {
+  .p-products__img__item {
     min-width: 100%;
     min-height: 100%; }
   .p-products__img:hover {
@@ -332,12 +334,12 @@ a {
 
 .p-products__bottombtn {
   width: 300px;
-  padding: 13px 0 12px;
   margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 13px 0 12px;
   text-align: center;
   font-size: 38px;
-  margin-right: auto;
-  margin-left: auto;
   background-color: #000; }
   .p-products__bottombtn__link {
     display: block;
@@ -355,10 +357,14 @@ a {
 @media (max-width: 1000px) {
   .p-products__wrapper {
     width: 100%;
-    padding: 0 5% 0; }
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto; }
   .p-products__categories {
     width: 100%;
-    margin: 0 auto; }
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto; }
   .p-products__list {
     width: 104%;
     margin: 17px -2% 0; }
@@ -391,7 +397,9 @@ a {
     height: 100%; }
   .p-products__list {
     width: 100%;
-    margin: 25px auto 0; }
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto; }
     .p-products__list > li {
       width: 100%;
       margin: 0 0 20px; }
@@ -400,13 +408,53 @@ a {
   .p-products__item__icon {
     top: -17px; } }
 
+.js-icon-1 {
+  background-image: url(http://opensohko.com/admin/wp-content/themes/opensohkodesign/images/icon/category/icon_all.png); }
+
+.js-icon-2 {
+  background-image: url(http://opensohko.com/admin/wp-content/themes/opensohkodesign/images/icon/category/icon_door.png); }
+
+.js-icon-3 {
+  background-image: url(http://opensohko.com/admin/wp-content/themes/opensohkodesign/images/icon/category/icon_stair.png); }
+
+.js-icon-4 {
+  background-image: url(http://opensohko.com/admin/wp-content/themes/opensohkodesign/images/icon/category/icon_ramp.png); }
+
+.js-icon-5 {
+  background-image: url(http://opensohko.com/admin/wp-content/themes/opensohkodesign/images/icon/category/icon_shelf.png); }
+
+.js-icon-6 {
+  background-image: url(http://opensohko.com/admin/wp-content/themes/opensohkodesign/images/icon/category/icon_table.png); }
+
+.js-icon-7 {
+  background-image: url(http://opensohko.com/admin/wp-content/themes/opensohkodesign/images/icon/category/icon_chair.png); }
+
+.js-icon-8 {
+  background-image: url(http://opensohko.com/admin/wp-content/themes/opensohkodesign/images/icon/category/icon_plant.png); }
+
+.js-icon-9 {
+  background-image: url(http://opensohko.com/admin/wp-content/themes/opensohkodesign/images/icon/category/icon_facade.png); }
+
+.js-icon-10 {
+  background-image: url(http://opensohko.com/admin/wp-content/themes/opensohkodesign/images/icon/category/icon_roof.png); }
+
+.js-icon-11 {
+  background-image: url(http://opensohko.com/admin/wp-content/themes/opensohkodesign/images/icon/category/icon_wall.png); }
+
+.js-icon-12 {
+  background-image: url(http://opensohko.com/admin/wp-content/themes/opensohkodesign/images/icon/category/icon_floor.png); }
+
+.js-icon-13 {
+  background-image: url(http://opensohko.com/admin/wp-content/themes/opensohkodesign/images/icon/category/icon_window.png); }
+
 .p-posts {
   background-color: #d8d8d8; }
   .p-posts__wrapper {
     width: 750px;
-    padding-bottom: 120px;
+    margin-top: 0;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    padding-bottom: 120px; }
   .p-posts__title {
     font-size: 43px;
     padding-top: 75px; }
@@ -440,9 +488,10 @@ a {
       width: 90%; }
     .p-posts__list {
       width: 100%;
-      max-width: 750px;
+      margin-top: 0;
       margin-left: auto;
-      margin-right: auto; } }
+      margin-right: auto;
+      max-width: 750px; } }
   @media (max-width: 640px) {
     .p-posts__wrapper {
       width: 100%;
@@ -506,96 +555,6 @@ a {
   display: block;
   clear: both;
   content: ""; }
-
-.u-mt-5 {
-  margin-top: 5px; }
-
-.u-mt-10 {
-  margin-top: 10px; }
-
-.u-mt-15 {
-  margin-top: 15px; }
-
-.u-mt-20 {
-  margin-top: 20px; }
-
-.u-mt-25 {
-  margin-top: 25px; }
-
-.u-mt-30 {
-  margin-top: 30px; }
-
-.u-mt-35 {
-  margin-top: 35px; }
-
-.u-mt-40 {
-  margin-top: 40px; }
-
-.u-mt-45 {
-  margin-top: 45px; }
-
-.u-mt-50 {
-  margin-top: 50px; }
-
-.u-mt-55 {
-  margin-top: 55px; }
-
-.u-mt-60 {
-  margin-top: 60px; }
-
-.u-mt-65 {
-  margin-top: 65px; }
-
-.u-mt-70 {
-  margin-top: 70px; }
-
-.u-mt-75 {
-  margin-top: 75px; }
-
-.u-mt-80 {
-  margin-top: 80px; }
-
-.u-mt-85 {
-  margin-top: 85px; }
-
-.u-mt-90 {
-  margin-top: 90px; }
-
-.u-mt-95 {
-  margin-top: 95px; }
-
-.u-mt-100 {
-  margin-top: 100px; }
-
-.u-ml-1 {
-  margin-top: 1px; }
-
-.u-ml-2 {
-  margin-top: 2px; }
-
-.u-ml-3 {
-  margin-top: 3px; }
-
-.u-ml-4 {
-  margin-top: 4px; }
-
-.u-ml-5 {
-  margin-top: 5px; }
-
-.u-ml-6 {
-  margin-top: 6px; }
-
-.u-ml-7 {
-  margin-top: 7px; }
-
-.u-ml-8 {
-  margin-top: 8px; }
-
-.u-ml-9 {
-  margin-top: 9px; }
-
-.u-ml-10 {
-  margin-top: 10px; }
 
 .u-txt-bold {
   font-weight: bold; }

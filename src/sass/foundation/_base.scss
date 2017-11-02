@@ -59,16 +59,21 @@ a {
   }
 }
 
-.fa-facebook {
-  &-official,
-  &-square,
+.fa {
+  &-facebook {
+    &-official,
+    &-square, {
+      margin-right: 4px;
+    }
+  }
+
   &-twitter {
     margin-right: 4px;
-    font-size: 13px;
+  }
+
+  &-play-circle {
+    font-size: 88px;
+    line-height: 80px;
   }
 }
 
-.fa-play-circle {
-  font-size: 88px;
-  line-height: 80px;
-}

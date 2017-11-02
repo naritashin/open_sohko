@@ -1,11 +1,6 @@
 .p-products {
   &__wrapper {
-    width: $maxWidth;
-    margin: {
-      top: 85px;
-      left: auto;
-      right: auto;
-    }
+    @include wrapper($maxWidth, 85px);
   }
 
   &__categories {
@@ -52,11 +47,10 @@
     }
   }
 
-
   &__img {
     padding: 10px 10px 13px;
     background-color: #fff;
-    & img {
+    &__item {
       min-width: 100%;
       min-height: 100%;
     }
@@ -86,15 +80,11 @@
   }
 
   &__bottombtn {
-    width: 300px;
+    @include wrapper(300px, 80px);
+
     padding: 13px 0 12px;
-    margin-top: 80px;
     text-align: center;
     font-size: 38px;
-    margin: {
-      right: auto;
-      left: auto;
-    }
     background-color: $brandColor;
 
     &__link {
@@ -117,13 +107,11 @@
 
   @media (max-width: 1000px) {
     &__wrapper {
-      width: 100%;
-      padding:0 5% 0;
+      @include wrapper(100%, 0);
     }
 
     &__categories {
-      width: 100%;
-      margin: 0 auto;
+      @include wrapper(100%, 0);
     }
 
     &__list {
@@ -176,8 +164,7 @@
     }
 
     &__list {
-      width: 100%;
-      margin: 25px auto 0;
+      @include wrapper(100%, 25px);
 
       & > li {
         width: 100%;
@@ -192,6 +179,14 @@
 
     &__item__icon {
       top: -17px;
+    }
+  }
+}
+
+.js-icon {
+  @each $class, $category in $categories {
+    &-#{$class} {
+      background-image: url(http://opensohko.com/admin/wp-content/themes/opensohkodesign/images/icon/category/icon_#{$category}.png);
     }
   }
 }
