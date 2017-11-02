@@ -1,0 +1,69 @@
+{
+  "categories": [
+    {
+      "name": "全て",
+      "category": "all",
+      "categoryId": "1"
+    },
+    {
+      "name": "ドア",
+      "category": "door",
+      "categoryId": "2"
+    },
+    {
+      "name": "階段",
+      "category": "stair",
+      "categoryId": "3"
+    },
+    {
+      "name": "照明",
+      "category": "ramp",
+      "categoryId": "4"
+    },
+    {
+      "name": "棚",
+      "category": "shelf",
+      "categoryId": "5"
+    },
+    {
+      "name": "テーブル",
+      "category": "table",
+      "categoryId": "6"
+    },
+    {
+      "name": "椅子",
+      "category": "chair",
+      "categoryId": "7"
+    },
+    {
+      "name": "植物",
+      "category": "plant",
+      "categoryId": "8"
+    },
+    {
+      "name": "ファサード",
+      "category": "facade",
+      "categoryId": "9"
+    },
+    {
+      "name": "屋根",
+      "category": "roof",
+      "categoryId": "10"
+    },
+    {
+      "name": "壁",
+      "category": "wall",
+      "categoryId": "11"
+    },
+    {
+      "name": "床",
+      "category": "floor",
+      "categoryId": "12"
+    },
+    {
+      "name": "窓",
+      "category": "window",
+      "categoryId": "13"
+    }
+  ]
+}
